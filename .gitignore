@@ -1,0 +1,16 @@
+# Archivos de sistema y python
+__pycache__/
+*.pyc
+.DS_Store
+
+# Entornos virtuales
+venv/
+env/
+
+# Claves secretas (Nunca subir a GitHub)
+.env
+secrets.toml
+
+# Videos o fotos temporales de los scrapers (opcional, para no llenar el repo)
+*.png
+*.jpg
