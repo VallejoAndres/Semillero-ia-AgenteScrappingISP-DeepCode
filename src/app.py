@@ -12,7 +12,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- ESTILOS PERSONALIZADOS (LOOK TECNOLÓGICO + INPUT FIJO ABAJO) ---
+# --- ESTILOS PERSONALIZADOS (INPUT FIJO ABAJO) ---
 st.markdown("""
 <style>
 body {
@@ -120,7 +120,7 @@ try:
     API_KEY = st.secrets["GOOGLE_API_KEY"]
 except:
     try:
-        sys.path.append(os.path.abspath(os.path.join(os.path.dirname(_file_), '..')))
+        sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
         from config import API_KEY
     except ImportError:
         st.error("❌ ERROR: No se encontró la API KEY. Crea .streamlit/secrets.toml o config.py")
