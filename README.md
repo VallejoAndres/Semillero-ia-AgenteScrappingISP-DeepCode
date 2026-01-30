@@ -27,10 +27,12 @@ Integrantes:
    pip install -r requirements.txt
    playwright install
 
-2. Crear una carpeta llamada .streamlit/ en la raiz del proyecto y añadir un archivo llamado secrets.toml con el contenido:
+2. Crear una carpeta llamada .streamlit/ en la raiz del proyecto y añadir un archivo llamado secrets.toml con tu API KEY de Google:
    ```toml
    [secrets]
    GOOGLE_API_KEY = "TU_API_KEY"
    ```
 
-3. Ejecutar el script `run_pipeline.py` para que inicie el asistente.
+3. Edita el archivo llamado `config.py` y agrega tu clave de API de Google.
+
+4. Ejecutar el script `run_pipeline.py` para que inicie el asistente.
