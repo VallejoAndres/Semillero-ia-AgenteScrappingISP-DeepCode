@@ -1,2 +1,2 @@
 # config.py
-API_KEY = "AIzaSyBmtl1wyiDIdIY_0s2qltW4ARIXZ6WXer0"
+API_KEY = "TU_API_KEY"
