@@ -2,6 +2,17 @@ import pandas as pd
 import os
 import re
 
+def limpiar_precio(precio_str):
+    """Convierte '$24,90' o 'USD 25' a un número flotante 24.90 para ordenar"""
+    if pd.isna(precio_str): return 1000.0 # Ponemos precio alto si es N/A para que vaya al final
+    # Quitamos todo lo que no sea digito o punto/coma
+    limpio = re.sub(r'[^\d.,]', '', str(precio_str))
+    limpio = limpio.replace(',', '.')
+    try:
+        return float(limpio)
+    except:
+        return 0.0
+    
 def normalizar_velocidad(texto):
     """
     Convierte todo a Mbps numérico.
