@@ -4,6 +4,10 @@ Este proyecto es un sistema inteligente que recopila, unifica y analiza los plan
 
 Utiliza **Web Scraping**, **Ingeniería de Datos** y **RAG (Retrieval-Augmented Generation)** para permitir a los usuarios chatear con una IA y encontrar el mejor plan.
 
+Integrantes:
+* Andres Vallejo(@VallejoAndres)
+* Victor Perez (@PerezVictor20)
+
 ## 🛠️ Tecnologías Usadas
 * **Python 3.11**
 * **Streamlit:** Para la interfaz web interactiva.
@@ -22,3 +26,11 @@ Utiliza **Web Scraping**, **Ingeniería de Datos** y **RAG (Retrieval-Augmented 
    ```bash
    pip install -r requirements.txt
    playwright install
+
+2. Crear una carpeta llamada .streamlit/ en la raiz del proyecto y añadir un archivo llamado secrets.toml con el contenido:
+   ```toml
+   [secrets]
+   GOOGLE_API_KEY = "TU_API_KEY"
+   ```
+
+3. Ejecutar el script `run_pipeline.py` para que inicie el asistente.
