@@ -7,7 +7,7 @@ from pypdf import PdfReader
 def scrapear_puntonet_pdf():
     print(" Iniciando Agente de Documentos (Puntonet)...")
     
-    # URL oficial del tarifario 2025 que me pasaste
+    # URL oficial del tarifario 2025
     url = "https://www.puntonet.ec/wp-content/uploads/PUNTONET-2026-NTF-CRP-PROM-001.pdf"
 
 # --- EL DISFRAZ (HEADERS) ---
