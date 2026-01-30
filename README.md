@@ -36,3 +36,7 @@ Integrantes:
 3. Edita el archivo llamado `config.py` y agrega tu clave de API de Google.
 
 4. Ejecutar el script `run_pipeline.py` para que inicie el asistente.
+
+
+## 🎞️ Enlace del video
+https://www.youtube.com/watch?v=VhtFDVoyPwY
