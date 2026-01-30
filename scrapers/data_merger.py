@@ -4,7 +4,7 @@ import re
 
 def limpiar_precio(precio_str):
     """Convierte '$24,90' o 'USD 25' a un número flotante 24.90 para ordenar"""
-    if pd.isna(precio_str): return 1000.0 # Ponemos precio alto si es N/A para que vaya al final
+    if pd.isna(precio_str): return 2000.0 # Ponemos precio alto si es N/A para que vaya al final
     # Quitamos todo lo que no sea digito o punto/coma
     limpio = re.sub(r'[^\d.,]', '', str(precio_str))
     limpio = limpio.replace(',', '.')
@@ -82,7 +82,7 @@ def unificar_csvs():
                 for col in cols_finales:
                     if col not in df.columns: df[col] = "N/A"
                 
-                # --- CORRECCIÓN IMPORTANTE: APLICAR NORMALIZACIÓN ---
+                # ---  APLICA NORMALIZACIÓN ---
                 # Creamos la columna numérica AHORA
                 df["Velocidad_Num"] = df["Velocidad"].apply(normalizar_velocidad)
                 
